@@ -43,8 +43,6 @@ def halfOff(half_off_open, half_off_close):
   print("Open Swim - Half Price! (ALL AGES)")
   print(half_off_open.strftime("%I") + ":" + half_off_open.strftime("%M"), half_off_open.strftime("%p"), "-", half_off_close.strftime("%I") + ":" + half_off_close.strftime("%M"), half_off_close.strftime("%p"))
 
-swimLessons()
-
 if datetime.datetime(year=2023, month=6, day=2, hour=00, minute=00) <= now < datetime.datetime(year=2023, month=9, day=1, hour=00, minute=00):
 #SUNDAY
    if dotw == "Sunday":
