@@ -99,3 +99,9 @@ img {
   height: 30%;
   width: 30%;
 }
+
+#prices {
+  border: 0px;
+  font-weight: bold;
+  margin-left: 10px;
+}
