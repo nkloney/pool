@@ -5,9 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Valley View</title>
-  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 <header style="background-color: #00513F;"><center>
   <table id="header">
@@ -27,9 +25,15 @@
   </table>
 </center>
 </header>
-<body>
+<header style="background-color: lightskyblue; padding: 15px;">
+  <h2 id="vv-head">THE POOL IS CURRENTLY:</h2><br>
+  <p id="vv-body" style="font-size: 18px;"></p>
+  <script type="text/javascript" src="vv.js"></script>
+</header>
+<body style="background-color: white;">
+  <hr style="border-top: 7px solid black;"><br><br>
   <div class="row" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-    <div class="column" style="font-size: 1.1vw; margin-left: 15%">
+    <div class="column" style="font-size: 1.1vw; margin-left: 15%; line-height: 150%;">
       <b style="font-size: 1.9vw;"><u>Hours</u></b><br>
       <b style="font-size: 1.4vw;"><u>Sun-Fri</u></b><br>
       <b>Open Swim</b> 12:00pm-5:30pm<br>
@@ -40,7 +44,7 @@
       <b style="font-size: 1.4vw;"><u>Sat</u></b><br>
       <b>Open Swim</b> 12:00pm-6:00pm<br>
     </div>
-    <div class="column" style="font-size: 1.1vw; margin-left: -15%">
+    <div class="column" style="font-size: 1.1vw; margin-left: -15%; line-height: 150%;">
       <b style="font-size: 1.9vw;"><u>Prices</u></b><br>
       <b style="font-size: 1.4vw;"><u>Open Swim</u></b><br>
       <table id="prices">
@@ -74,9 +78,6 @@
       &emsp;&emsp;(Whichever is Cheapest)<br>
     </div>
   </div>
-  <hr>
-  <p style="font-size: 25px; margin: 0; padding: 0; font-weight: bold;">THE POOL IS CURRENTLY:</p>
-  <py-script src="vv.py"></py-script>
 </body>
 
 </html>
