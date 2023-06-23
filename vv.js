@@ -1,4 +1,3 @@
-var swimLessons = true //CHANGED FOR HOLIDAY MALFUNCTION
 var now = new Date();
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var dotw = daysOfWeek[now.getDay()];
@@ -16,7 +15,7 @@ function amTimes(am_open, am_close) {
     hour: 'numeric',
     minute: 'numeric',
     hour12: true
-  }) + "&emsp; </b><br><br><b style='font-size: 25px;'>NO EVENING SWIM</b>"; //CHANGED FOR HOLIDAY MALFUNCTION
+  }) + "</b>";
 }
 
 function familyNight(family_night_open, family_night_close) {
@@ -45,6 +44,15 @@ function halfOff(half_off_open, half_off_close) {
   }) + "</b>";
 }
 
+function morning(am_open) {
+  document.getElementById("vv-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+  document.getElementById("vv-body").innerHTML = "We will be open at " + am_open.toLocaleString('en-US', {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: true
+  });
+}
+
 var am_open = new Date(y, m, d, 12, 0);
 if (dotw === "Saturday") {
   var am_close = new Date(y, m, d, 18, 0);
@@ -52,6 +60,8 @@ if (dotw === "Saturday") {
     amTimes(am_open, am_close);
   } else if (am_close <= now) {
     document.getElementById("vv-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+  } else if (now < am_open) {
+    morning(am_open);
   }
 } else {
   var am_close = new Date(y, m, d, 17, 30);
@@ -71,20 +81,16 @@ if (dotw === "Saturday") {
     hour: 'numeric',
     minute: 'numeric',
     hour12: true
-  }) + "&emsp; </b><br><br><b style='font-size: 25px;'>NO EVENING SWIM</b>"; //CHANGED FOR HOLIDAY MALFUNCTION
-  } else if (swimLessons != true) { //CHANGED FOR HOLIDAY MALFUNCTION
-    if (pm_open <= now && now < pm_close) { //CHANGED FOR HOLIDAY MALFUNCTION
-      if (dotw === "Wednesday" || dotw === "Sunday") {
-        familyNight(pm_open, pm_close);
-      } else {
-        halfOff(pm_open, pm_close);
-      }
-    } else if (pm_close <= now) {
-      document.getElementById("vv-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+  }) + "</b>";
+  } else if (pm_open <= now && now < pm_close) {
+    if (dotw === "Wednesday" || dotw === "Sunday") {
+      familyNight(pm_open, pm_close);
+    } else {
+      halfOff(pm_open, pm_close);
     }
-  } else if (swimLessons === true) { //CHANGED FOR HOLIDAY MALFUNCTION
-    if (adult_swim_close <= now) {
-      document.getElementById("vv-head").innerHTML = "CLOSED early for Holiday lessons while Holiday is being repaired.";
-    }
+  } else if (pm_close <= now) {
+    document.getElementById("vv-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+  } else if (now < am_open) {
+    morning(am_open);
   }
 }

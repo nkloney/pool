@@ -33,7 +33,16 @@ function halfOff(half_off_open, half_off_close) {
     document.getElementById("h-body").innerHTML = "<u>Open Swim - Half Price! (ALL AGES)</u><br><b>" + half_off_open.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) + " - " + half_off_close.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) + "</b>";
 }
 
-document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u> due to mechanical malfunction, but will hopefully reopen by Thursday the 22nd!";
+function morning(am_open) {
+  document.getElementById("vv-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+  document.getElementById("vv-body").innerHTML = "We will be open at " + am_open.toLocaleString('en-US', {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: true
+  });
+}
+
+document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u> due to mechanical malfunction, but will hopefully reopen Saturday!";
 
 /*
 if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
@@ -51,6 +60,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
       familyNight(family_night_open, family_night_close);
     } else if (family_night_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+    } else if (now < am_open) {
+      morning(am_open);
     }
   } else if (dotw === "Saturday") {
     var am_open = new Date(y, m, d, 11, 30);
@@ -59,6 +70,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
       amTimes(am_open, am_close);
     } else if (am_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+    } else if (now < am_open) {
+      morning(am_open);
     }
   } else if (dotw === "Monday" || dotw === "Tuesday" || dotw === "Thursday") {
     var am_open = new Date(y, m, d, 11, 30);
@@ -68,6 +81,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
         amTimes(am_open, am_close);
       } else if (am_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+      } else if (now < am_open) {
+        morning(am_open);
       }
     } else {
       var am_close = new Date(y, m - 1, d, 19, 0);
@@ -79,6 +94,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
         halfOff(half_off_open, half_off_close);
       } else if (half_off_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+      } else if (now < am_open) {
+        morning(am_open);
       }
     }
   } else if (dotw === "Friday") {
@@ -92,6 +109,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
       halfOff(half_off_open, half_off_close);
     } else if (half_off_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+    } else if (now < am_open) {
+      morning(am_open);
     }
   } else if (dotw === "Wednesday") {
     var am_open = new Date(y, m, d, 11, 30);
@@ -101,6 +120,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
         amTimes(am_open, am_close);
       } else if (am_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+      } else if (now < am_open) {
+        morning(am_open);
       }
     } else {
       var am_close = new Date(y, m, d, 17, 45);
@@ -115,6 +136,8 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
         familyNight(family_night_open, family_night_close);
       } else if (family_night_close <= now) {
         document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+      } else if (now < am_open) {
+        morning(am_open);
       }
     }
   }
