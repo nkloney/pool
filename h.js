@@ -42,9 +42,6 @@ function morning(am_open) {
   });
 }
 
-document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u> due to mechanical malfunction, but will hopefully reopen Saturday!";
-
-/*
 if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
   if (dotw === "Sunday") {
     var am_open = new Date(y, m, d, 12, 0);
@@ -142,4 +139,3 @@ if (new Date(2023, 5, 2) <= now && now < new Date(2023, 8, 1)) {
     }
   }
 }
-*/
