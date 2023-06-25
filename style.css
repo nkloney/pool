@@ -6,9 +6,11 @@ html {
 }
 
 #header {
-  font-size: 200%;
+  font-size: x-large;
   margin: 0 auto;
   padding: 10px;
+  max-width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #hover:link {
