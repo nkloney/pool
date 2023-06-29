@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #00513F;
+}
+
+#header {
+  font-size: 1.188rem;
+  margin: 0 auto;
+  padding: 0.625rem;
+  max-width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  color: #ffffff;
+  background-color: #00513f;
+  font-size: 1.188rem;
+  border: 0.063rem solid #00513f;
+  padding: 0.938rem 3.125rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #00513f;
+	background-color: #57c18e;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.row {
+  text-align: center;
+  margin: 0;
+  padding-left: 0% 20% ;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#prices {
+  border: 0px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+* {
+  margin: 0;
+  line-height: 150%;
+}

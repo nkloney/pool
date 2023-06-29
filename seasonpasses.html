@@ -1,127 +1,92 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Season Passes</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<header style="background-color: #00513F;"><center>
-  <table id="header">
-      <tr>
-        <th>
-          <a href="holiday.html" id="hover">Holiday</a>
-        </th>
-        <th>&emsp;&emsp;&emsp;&emsp;</th>
-        <th>
-          <a href="valleyview.html" id="hover">Valley View</a>
-        </th>
-        <th>&emsp;&emsp;&emsp;&emsp;</th>
-        <th>
-          <a href="index.html" id="hover">Home</a>
-        </th>
-      </tr>
-  </table>
-</center>
-</header>
-<body>
-  <center>
-    <p style="font-size: 20px;">If you plan to visit the pools multiple times this summer, a season pass is for you!</p><br>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Season Passes</title>
+    <link href="spstyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <header id="header">
+    <a href="index.html"><button type="button" name="home">Home</button></a>
+    <a href="holiday.html"><button type="button" name="holiday">Holiday</button></a>
+    <a href="valleyview.html"><button type="button" name="valleyview">Valley View</button></a>
+    <a href="seasonpasses.html"><button type="button" name="passes" disabled>Season Passes</button></a>
+  </header>
+  
+  <body>
+    <center>
+    <p style="font-size: 20px;">If you plan to visit the pools multiple times this summer, a season pass is for you!</p>
     <div style="margin-left: 20%; margin-right: 20%;">
       <p>Passes are sold per household. Each person will receive their own <i>individual</i> pass card. All pass holders will need a photo either taken or reused from previous years passes. Photos can be taken at City Hall or the Valley Junction Activity Center during regular business hours (Monday - Friday: 8 a.m. - 5 p.m.) or at the West Des Moines Aquatic Centers.</p>
-    </div><br>
+    </div>
     <p><i>Reduced-rate season pool passes are available for income-qualifying West Des Moines residents through <a href="https://www.wdm.iowa.gov/government/human-services/programs-services/pool-passes" target="_blank">West Des Moines Human Services</a>.</i></p>
-  <style>
-  	.demo {
-  		border:1px solid #00513F;
-  		border-collapse:collapse;
-  		padding:5px;
-  	}
-  	.demo caption {
-  		text-align:center;
-  	}
-  	.demo th {
-  		border:1px solid #00513F;
-  		padding:5px;
-  		background:#57C18E;
-  	}
-  	.demo td {
-  		border:1px solid #00513F;
-  		text-align:center;
-  		padding:5px;
-  		background:#FFFFFF;
-  	}
-
-    table {
-      font-size: 25px
-    }
-  </style>
-  <table class="demo">
-  	<caption><b><u>West Des Moines Pool Passes</u></b></caption>
-  	<thead>
-  	<tr>
-  		<th># of Passes</th>
-  		<th>WDM Resident</th>
-  		<th>Non-Resident</th>
-  	</tr>
-  	</thead>
-  	<tbody>
-  	<tr>
-  		<td>1</td>
-  		<td>$90</td>
-  		<td>$140</td>
-  	</tr>
-  	<tr>
-  		<td>2</td>
-  		<td>$130</td>
-  		<td>$190</td>
-  	</tr>
-  	<tr>
-  		<td>3</td>
-  		<td>$175</td>
-  		<td>$255</td>
-  	</tr>
-  	<tr>
-  		<td>4</td>
-  		<td>$220</td>
-  		<td>$320</td>
-  	</tr>
-  	<tr>
-  		<td>5</td>
-  		<td></t>$265</td>
-  		<td>$385</td>
-  	</tr>
-  	<tr>
-  		<td>6</td>
-  		<td>$310</td>
-  		<td>$450</td>
-  	</tr>
-  	<tr>
-  		<td>7</td>
-  		<td>$355</td>
-  		<td>$515</td>
-  	</tr>
-  	<tr>
-  		<td>8</td>
-  		<td>$400</td>
-  		<td>$580</td>
-  	</tr>
-    <tr>
-  		<td style="font-size: 65%;">Family Member<br>Add-On</td>
-  		<td>$45</td>
-  		<td>$65</td>
-  	</tr>
-    <tr>
-  		<td style="font-size: 65%;">Childcare Provider<br>Add-On</td>
-  		<td>$65</td>
-  		<td>$70</td>
-  	</tr>
-  	<tbody>
-  </table>
-  <br>
-  </center>
-</body>
-
+    <table class="demo">
+    	<caption><b><u>West Des Moines Pool Passes</u></b></caption>
+    	<thead>
+    	<tr>
+    		<th># of Passes</th>
+    		<th>WDM Resident</th>
+    		<th>Non-Resident</th>
+    	</tr>
+    	</thead>
+    	<tbody>
+    	<tr>
+    		<td>1</td>
+    		<td>$90</td>
+    		<td>$140</td>
+    	</tr>
+    	<tr>
+    		<td>2</td>
+    		<td>$130</td>
+    		<td>$190</td>
+    	</tr>
+    	<tr>
+    		<td>3</td>
+    		<td>$175</td>
+    		<td>$255</td>
+    	</tr>
+    	<tr>
+    		<td>4</td>
+    		<td>$220</td>
+    		<td>$320</td>
+    	</tr>
+    	<tr>
+    		<td>5</td>
+    		<td></t>$265</td>
+    		<td>$385</td>
+    	</tr>
+    	<tr>
+    		<td>6</td>
+    		<td>$310</td>
+    		<td>$450</td>
+    	</tr>
+    	<tr>
+    		<td>7</td>
+    		<td>$355</td>
+    		<td>$515</td>
+    	</tr>
+    	<tr>
+    		<td>8</td>
+    		<td>$400</td>
+    		<td>$580</td>
+    	</tr>
+      <tr>
+    		<td style="font-size: 65%;">Family Member<br>Add-On</td>
+    		<td>$45</td>
+    		<td>$65</td>
+    	</tr>
+      <tr>
+    		<td style="font-size: 65%;">Childcare Provider<br>Add-On</td>
+    		<td>$65</td>
+    		<td>$70</td>
+    	</tr>
+    	<tbody>
+    </table>
+    <br>
+    </center>
+  </body>
+  
 </html>
   

@@ -34,8 +34,8 @@ function halfOff(half_off_open, half_off_close) {
 }
 
 function morning(am_open) {
-  document.getElementById("vv-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
-  document.getElementById("vv-body").innerHTML = "We will be open at " + am_open.toLocaleString('en-US', {
+  document.getElementById("h-head").innerHTML = "THE POOL IS CURRENTLY <u>CLOSED</u>";
+  document.getElementById("h-body").innerHTML = "We will be open at " + am_open.toLocaleString('en-US', {
     hour: 'numeric',
     minute: 'numeric',
     hour12: true

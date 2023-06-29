@@ -1,83 +1,81 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Valley View</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<header style="background-color: #00513F;"><center>
-  <table id="header">
-      <tr>
-        <th>
-          <a href="holiday.html" id="hover">Holiday</a>
-        </th>
-        <th>&emsp;&emsp;&emsp;&emsp;</th>
-        <th>
-          <a href="index.html" id="hover">Home</a>
-        </th>
-        <th>&emsp;&emsp;&emsp;&emsp;</th>
-        <th>
-          <a href="seasonpasses.html" id="hover">Season Passes</a>
-        </th>
-      </tr>
-  </table>
-</center>
-</header>
-<header style="background-color: lightskyblue; padding: 15px;">
-  <h2 id="vv-head">THE POOL IS CURRENTLY:</h2><br>
-  <p id="vv-body" style="font-size: 18px;"></p>
-  <script type="text/javascript" src="vv.js"></script>
-</header>
-<body style="background-color: white;">
-  <hr style="border-top: 7px solid black;"><br><br>
-  <div class="row" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-    <div class="column" style="font-size: 1.3vw; margin-left: 15%;">
-      <b style="font-size: 2.1vw;"><u>Hours</u></b><br>
-      <b style="font-size: 1.6vw;"><u>Sun-Fri</u></b><br>
-      <b>Open Swim</b> 12:00pm-5:30pm<br>
-      <b>Adult Lap Swim/Current Walk</b> 5:30pm-6:30pm *<b>ADULTS ONLY</b>*<br>
-      <b>Half Price Open Swim</b>&emsp;<u>M, T, Th, F</u>&emsp;6:30-8:30pm<br>
-      <b>Family Night</b>&emsp;<u>Wed & Sun</u>&emsp;6:30-8:30pm<br>
-      <br>
-      <b style="font-size: 1.6vw;"><u>Sat</u></b><br>
-      <b>Open Swim</b> 12:00pm-6:00pm<br>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Valley View</title>
+    <link href="vvstyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <header id="header">
+    <a href="index.html"><button type="button" name="home">Home</button></a>
+    <a href="holiday.html"><button type="button" name="holiday">Holiday</button></a>
+    <a href="valleyview.html"><button type="button" name="valleyview" disabled>Valley View</button></a>
+    <a href="seasonpasses.html"><button type="button" name="passes">Season Passes</button></a>
+  </header>
+  
+  <header style="background-color: lightskyblue; padding: 15px;">
+    <h2 id="vv-head">THE POOL IS CURRENTLY:</h2><br>
+    <p id="vv-body" style="font-size: 18px;"></p>
+    <script type="text/javascript" src="vv.js"></script>
+  </header>
+
+  <hr style="border-top: 7px solid black;">
+  
+  <header style="background-color: black; background-repeat: no-repeat; background-position: center; background-size: cover; padding: 15px;">
+    <p style="font-size: 1.5em; color: white;">On July 4th (Tuesday), hours are from 12 PM to 6 PM.</p>
+  </header>
+  
+  <body style="background-color: white;">
+    <hr style="border-top: 7px solid black;"><br><br>
+    <div class="row" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+      <div class="column" style="font-size: 1.2vw; margin-left: 15%;">
+        <b style="font-size: 2.0vw;"><u>Hours</u></b><br>
+        <b style="font-size: 1.5vw;"><u>Sun-Fri</u></b><br>
+        <b>Open Swim</b> 12:00pm-5:30pm<br>
+        <b>Adult Lap Swim/Current Walk</b> 5:30pm-6:30pm *<b>ADULTS ONLY</b>*<br>
+        <b>Half Price Open Swim</b>&emsp;<u>M, T, Th, F</u>&emsp;6:30-8:30pm<br>
+        <b>Family Night</b>&emsp;<u>Wed & Sun</u>&emsp;6:30-8:30pm<br>
+        <br>
+        <b style="font-size: 1.5vw;"><u>Sat</u></b><br>
+        <b>Open Swim</b> 12:00pm-6:00pm<br>
+      </div>
+      <div class="column" style="font-size: 1.2vw; margin-left: -15%;">
+        <b style="font-size: 2.0vw;"><u>Prices</u></b><br>
+        <b style="font-size: 1.5vw;"><u>Open Swim</u></b><br>
+        <table id="prices">
+          <tr id="prices">
+            <td id="prices">&emsp;&emsp;⚫ 0-2 - FREE&emsp;</td>
+            <td id="prices">⚫ 3-12 - $6</td>
+          </tr>
+          <tr id="prices">
+            <td id="prices">&emsp;&emsp;⚫ 13+ - $9&emsp;</td>
+            <td id="prices">⚫ 55+ - $7</td>
+          </tr>
+        </table>
+        <br>
+        <b style="font-size: 1.5vw;"><u>Adult Lap Swim/Current Walk</u></b><br>
+        <b>&emsp;&emsp;$4</b><br>
+        <br>
+        <b style="font-size: 1.5vw;"><u>Half Price Open Swim</u></b><br>
+        <table id="prices">
+          <tr id="prices">
+            <td id="prices">&emsp;&emsp;⚫ 0-2 - FREE&emsp;</td>
+            <td id="prices">⚫ 3-12 - $3</td>
+          </tr>
+          <tr id="prices">
+            <td id="prices">&emsp;&emsp;⚫ 13+ - $4.50&emsp;</td>
+            <td id="prices">⚫ 55+ - $3.50</td>
+          </tr>
+        </table>
+        <br>
+        <b style="font-size: 1.5vw;"><u>Family Night</u></b><br>
+        &emsp;&emsp;Family/Group - $15 OR Half off<br>
+        &emsp;&emsp;(Whichever is Cheapest)<br>
+      </div>
     </div>
-    <div class="column" style="font-size: 1.3vw; margin-left: -15%;">
-      <b style="font-size: 2.1vw;"><u>Prices</u></b><br>
-      <b style="font-size: 1.6vw;"><u>Open Swim</u></b><br>
-      <table id="prices">
-        <tr id="prices">
-          <td id="prices">&emsp;&emsp;⚫ 0-2 - FREE&emsp;</td>
-          <td id="prices">⚫ 3-12 - $6</td>
-        </tr>
-        <tr id="prices">
-          <td id="prices">&emsp;&emsp;⚫ 13+ - $9&emsp;</td>
-          <td id="prices">⚫ 55+ - $7</td>
-        </tr>
-      </table>
-      <br>
-      <b style="font-size: 1.6vw;"><u>Adult Lap Swim/Current Walk</u></b><br>
-      <b>&emsp;&emsp;$4</b><br>
-      <br>
-      <b style="font-size: 1.6vw;"><u>Half Price Open Swim</u></b><br>
-      <table id="prices">
-        <tr id="prices">
-          <td id="prices">&emsp;&emsp;⚫ 0-2 - FREE&emsp;</td>
-          <td id="prices">⚫ 3-12 - $3</td>
-        </tr>
-        <tr id="prices">
-          <td id="prices">&emsp;&emsp;⚫ 13+ - $4.50&emsp;</td>
-          <td id="prices">⚫ 55+ - $3.50</td>
-        </tr>
-      </table>
-      <br>
-      <b style="font-size: 1.6vw;"><u>Family Night</u></b><br>
-      &emsp;&emsp;Family/Group - $15 OR Half off<br>
-      &emsp;&emsp;(Whichever is Cheapest)<br>
-    </div>
-  </div>
-</body>
+    <br>
+  </body>
 
 </html>
