@@ -10,12 +10,11 @@ header {
 }
 
 #header {
-  font-size: 1.188rem;
   margin: 0 auto;
-  padding: 0.625rem;
+  padding: 0.657vw;
   max-width: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+  text-align: center
 }
 
 body {
@@ -26,9 +25,9 @@ body {
 button {
   color: #ffffff;
   background-color: #00513f;
-  font-size: 1.188rem;
-  border: 0.063rem solid #00513f;
-  padding: 0.938rem 3.125rem;
+  font-size: 2vw;
+  border: 0.066vw solid #00513f;
+  padding: 0.987vw 3.287vw;
   cursor: pointer;
 }
 
