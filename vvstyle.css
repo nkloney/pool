@@ -21,6 +21,7 @@ header {
 body {
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 button {
@@ -60,6 +61,10 @@ button:hover {
   border: 0px;
   font-weight: bold;
   margin-left: 10px;
+}
+
+hr {
+  border-top: 7px solid black;
 }
 
 * {
