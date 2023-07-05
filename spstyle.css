@@ -36,6 +36,10 @@ button:hover {
 	background-color: #57c18e;
 }
 
+p {
+  font-size: 1.052vw;
+}
+
 .demo {
   border:1px solid #00513F;
   border-collapse:collapse;
