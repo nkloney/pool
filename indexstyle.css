@@ -32,18 +32,22 @@ button {
   cursor: pointer;
 }
 
-#page {
-  margin: 0.105vw;
-  font-size: 1.4vw;
-}
-
 button:hover {
   color: #00513f;
 	background-color: #57c18e;
 }
 
+h1 {
+  font-size: 5.5vw;
+}
+
+#page {
+  margin: 0.105vw;
+  font-size: 1.4vw;
+}
+
 .FAQ {
-  font-size: 120%;
+  font-size: 1.5vw;
 }
 
 .payment {

@@ -56,9 +56,9 @@ button:hover {
 }
 
 #prices {
-  border: 0px;
+  border: 0vw;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0.7vw;
 }
 
 * {

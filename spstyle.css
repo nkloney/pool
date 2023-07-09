@@ -41,30 +41,30 @@ p {
 }
 
 .demo {
-  border:1px solid #00513F;
-  border-collapse:collapse;
-  padding:5px;
+  border: 0.07vw solid #00513F;
+  border-collapse: collapse;
+  padding: 0.3vw;
 }
 
 .demo caption {
-  text-align:center;
+  text-align: center;
 }
 
 .demo th {
-  border:1px solid #00513F;
-  padding:5px;
-  background:#57C18E;
+  border: 0.07vw solid #00513F;
+  padding: 0.3vw;
+  background: #57C18E;
 }
 
 .demo td {
-  border:1px solid #00513F;
-  text-align:center;
-  padding:5px;
-  background:#FFFFFF;
+  border: 0.07vw solid #00513F;
+  text-align: center;
+  padding: 0.3vw;
+  background: #FFFFFF;
 }
 
 table {
-  font-size: 25px
+  font-size: 1.9vw;
 }
 
 * {

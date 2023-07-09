@@ -57,13 +57,13 @@ button:hover {
 }
 
 #prices {
-  border: 0px;
+  border: 0;
   font-weight: bold;
-  margin-left: 10px;
+  margin-left: 0.7vw;
 }
 
 hr {
-  border-top: 7px solid black;
+  border-top: 0.5vw solid black;
 }
 
 * {
