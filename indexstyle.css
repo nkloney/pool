@@ -17,6 +17,10 @@ header {
   text-align: center;
 }
 
+a:visited {
+  color: blue;
+}
+
 body {
   margin: 0;
   padding: 0;
